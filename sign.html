@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="sign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: url("sign.jpeg");
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+
+        }
+
+        #img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            filter: blur(2px);
+            z-index: -1;
+        }
+
+        #main-text {
+            position: absolute;
+            color: #fff;
+            top: 450px;
+            left: 300px;
+            font-size: 40px;
+        }
+
+        #main-text2 {
+            background-color: #fff;
+            opacity: .8;
+            font-size: medium;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            width: 400px;
+        }
+
+        form {
+            background-color: white;
+            height: auto;
+            width: 350px;
+            margin-left: 950px;
+            margin-top: 150px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #6A1B9A;
+            text-align: center;
+        }
+
+        .form p {
+            font-size: medium;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form a {
+            color: blue;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            border: 3px solid white;
+            outline: none;
+            padding: 10px;
+            width: 80%;
+        }
+
+        .input-container {
+            margin-left: 10px;
+            border-bottom: 2px solid #6A1B9A;
+        }
+
+        input[type="button"] {
+            background-color: #6A1B9A;
+            color: #fff;
+            width: 90%;
+            padding: 15px;
+            font-size: 1.2rem;
+            margin-left: 18px;
+            border-radius: 30px;
+            font-weight: 700;
+        }
+
+        #sign-btn {
+            margin-top: 20px;
+        }
+
+        #forgot {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img"></div>
+
+    <div id="main-text">
+        <p>Track, Save, Grow</p>
+        <div id="main-text2">
+            <p>Roll-up and nesting on Income & Expense report</p>
+            <span>
+                <p>now available. <a href="#">Read more</a></p>
+            </span>
+        </div>
+    </div>
+
+    <form>
+        <div class="form">
+            <h1>Sign up to Fintrix</h1>
+
+            <div class="input-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name">
+            </div>
+
+            <div class="input-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" placeholder="Username or email">
+            </div>
+
+            <br>
+
+            <div class="input-container">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <input type="button" value="SIGN UP" id="sign-btn"><br><br>
+            <p>Already have an account? <a href="login.html">Login now</a></p>
+        </div>
+    </form>
+
+</body>
+
+</html>

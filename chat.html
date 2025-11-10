@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    .side-bar {
+      grid-row: 1 / span 3;
+      background: #1e293b;
+      color: white;
+      padding: 15px;
+    }
+
+    .side-bar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .side-bar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .side-bar li {
+      margin: 15px 0;
+    }
+
+
+    header {
+      background-color: #0f766e;
+      color: white;
+      padding: 15px 20px;
+    }
+
+
+    main {
+      background: #f8fafc;
+      padding: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .content-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      grid-column: 2;
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+
+    @media (max-width: 800px) {
+      body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      .side-bar {
+        grid-row: auto;
+        grid-column: 1;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .content-sections {
+        grid-template-columns: 1fr;
+      }
+    }
+    .side-bar {
+  width: 220px;
+  background-color: #1f2937;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+}
+
+
+
+.side-bar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.side-bar li {
+  margin: 15px 0;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.side-bar li:hover {
+  color: #10b981;
+  transform: translateX(5px);
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="side-bar">
+  <h2><i class="fa-solid fa-coins"></i> Finance Tracker</h2>
+  <ul>
+    <li><i class="fa-solid fa-chart-line"></i> Overview</li>
+    <li><i class="fa-solid fa-right-left"></i> Transactions</li>
+    <li><i class="fa-solid fa-wallet"></i> Accounts</li>
+    <li><i class="fa-solid fa-piggy-bank"></i> Budgets</li>
+    <li><i class="fa-solid fa-chart-pie"></i> Reports</li>
+    <li><i class="fa-solid fa-gear"></i> Settings</li>
+  </ul>
+</div>
+
+
+  <header>
+    <h1>Spending Trend Analysis</h1>
+  </header>
+
+  <main>
+    <div class="cards">
+      <div class="card">
+        <img src="Screenshot 2025-11-08 153644.png" height="150px">
+      </div>
+      <div class="card">
+        <img src="Screenshot 2025-11-08 153704.png" height="150px">
+      </div>
+      <div class="card">
+        <img src="Screenshot 2025-11-08 153716.png" height="150px">
+      </div>
+    </div>
+
+    <div class="content-sections">
+      <div class="section">
+        <img src="Screenshot 2025-11-08 153721.png">
+      </div>
+      <div class="section">
+        <img src="Screenshot 2025-11-08 153739.png">
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

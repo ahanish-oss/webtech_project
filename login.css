@@ -1,0 +1,85 @@
+body {
+    background-image: url("login.png");
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#main-text {
+    position: absolute;
+    color: #fff;
+    top: 450px;
+    left: 300px;
+    font-size: 40px;
+}
+
+#main-text2 {
+    background-color: #fff;
+    opacity: .8;
+    font-size: medium;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+form {
+    background-color: white;
+    height: auto;
+    width: 350px;
+    margin-left: 950px;
+    margin-top: 150px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #6A1B9A;
+    text-align: center;
+}
+
+.form p {
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form a {
+    color: blue;
+}
+
+input[type="email"] {
+    border: 3px solid white;
+    outline: none;
+    padding: 10px;
+}
+
+input[type="password"] {
+    border: 3px solid white;
+    outline: none;
+    padding: 10px;
+
+    width: 80%;
+}
+
+.input-container {
+    margin-left: 10px;
+    border-bottom: 2px solid #6A1B9A;
+}
+
+input[type="checkbox"] {
+    margin-top: 40px;
+}
+
+input[type="submit"] {
+    background-color: #6A1B9A;
+    color: #fff;
+    width: 90%;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-left: 18px;
+    border-radius: 30px;
+}
+
+#forgot {
+    margin-left: 5px
+}
